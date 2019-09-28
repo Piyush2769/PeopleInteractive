@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#A9A9A9"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/ver"
+                android:layout_width="match_parent"
+                android:layout_height="540dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Piyush Maheswari"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="435dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/age"
+                android:text="21 ,"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:text="Male"
+                android:layout_toRightOf="@id/age"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:src="@drawable/ic_call_black_24dp"
+                android:id="@+id/contact"
+                android:backgroundTint="#32CD32"
+                android:layout_marginTop="515dp"
+                android:layout_marginLeft="220dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:src="@drawable/ic_check_black_24dp"
+                android:id="@+id/connect"
+                android:backgroundTint="#008000"
+                android:layout_marginTop="515dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/like"
+                android:text="Like this Profile?"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/contact_text"
+                android:text="View Contact"
+                android:layout_below="@id/contact"
+                android:layout_marginLeft="210dp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Connect Now"
+                android:id="@+id/connect_text"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/contact"
+                android:layout_toRightOf="@id/contact_text"
+                android:layout_marginLeft="14dp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
