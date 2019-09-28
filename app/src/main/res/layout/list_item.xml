@@ -55,6 +55,7 @@
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="20sp"
+                android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -106,7 +107,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_below="@id/contact"
                 android:layout_toRightOf="@id/contact_text"
-                android:layout_marginLeft="14dp"
+                android:layout_marginLeft="20dp"
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:layout_width="wrap_content"

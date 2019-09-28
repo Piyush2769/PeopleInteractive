@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -32,6 +33,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     public void onBindViewHolder(@NonNull UserViewHolder userViewHolder, int i) {
 
         User user=userList.get(i);
+
+        userViewHolder.name.setText(user.getName());
+        userViewHolder.age.setText(user.getAge());
+        userViewHolder.gender.setText(user.getGender());
     }
 
     @Override
@@ -41,9 +46,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
     class UserViewHolder extends RecyclerView.ViewHolder{
 
+        TextView name,age,gender;
+
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            name=itemView.findViewById(R.id.name);
+            age=itemView.findViewById(R.id.age);
+            gender=itemView.findViewById(R.id.gender);
         }
     }
 }
