@@ -9,15 +9,14 @@ import android.view.ViewGroup;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
 
     private Context context;
     private List<User> userList;
-
-    private TextView textView;
-    private TextSwitcher switcher;
 
     public UserAdapter(Context context, List<User> userList) {
         this.context = context;
@@ -41,6 +40,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         userViewHolder.name.setText(user.getName());
         userViewHolder.age.setText(user.getAge());
         userViewHolder.gender.setText(user.getGender());
+
     }
 
     @Override

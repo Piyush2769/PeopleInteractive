@@ -5,11 +5,14 @@ public class User {
     private String name;
     private String age;
     private String gender;
+    private String imgUrl;
 
-    public User(String name, String age, String gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public String getName() {
