@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayoutManager linearLayoutManager;
     private ArrayList<String> imageUrlss=new ArrayList<>();
     private ArrayList<String> imageUrlssd=new ArrayList<>();
+    private ArrayList<String> imageUrdlss=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
