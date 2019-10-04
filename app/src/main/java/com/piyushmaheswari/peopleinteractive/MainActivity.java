@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     LinearLayoutManager linearLayoutManager;
     private ArrayList<String> imageUrlss=new ArrayList<>();
+    private ArrayList<String> imageUrlssd=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
