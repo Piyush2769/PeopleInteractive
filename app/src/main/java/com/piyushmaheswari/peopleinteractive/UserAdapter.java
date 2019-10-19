@@ -16,6 +16,7 @@ import java.util.List;
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
 
     private Context context;
+    private TextView s;
     private List<User> userList;
 
     public UserAdapter(Context context, List<User> userList) {
@@ -53,7 +54,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         TextView name,age,gender;
 
 
-        public UserViewHolder(@NonNull View itemView) {
+        UserViewHolder(@NonNull View itemView) {
             super(itemView);
 
             name=itemView.findViewById(R.id.name);
